@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    
+}
+.bottom-ai{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform:translate(-50%) ;
+    font-size: 18px;
+    text-decoration:none ;
+    color:#69235B ;
+}
+
+@media (min-width: 768px) {
+    .home{
+      max-width: 400px;
+      border-color: #b19aac;
+      border-style: solid;
+      width: 400px;
+      border-radius: 10px; /* Add border radius to create rounded corners */
+      box-shadow: 0 0 20px rgba(17, 15, 15, 0.2);
+    }
+  }

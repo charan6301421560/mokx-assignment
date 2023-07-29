@@ -1,4 +1,5 @@
 import React from 'react';
+import './SinglePage.css'
 
 const SinglePage = () => {
   const handleClick = () => {
@@ -9,32 +10,11 @@ const SinglePage = () => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        backgroundColor: '#f0f0f0',
-        cursor: 'pointer',
-      }}
-      onClick={handleClick}
-    >
+    <div className='home' onClick={handleClick} >
       <div style={{ textAlign: 'center' }}>
           <img src="https://i.ibb.co/yf1W4VX/MOkx-logo-2.png" alt="MOkx-logo-2" border="0"/>
       </div>
-      <a
-        href="/home"
-        style={{
-          position: 'fixed',
-          bottom: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          fontSize: '18px',
-          textDecoration: 'none',
-          color: '#69235B',
-        }}
+      <a href="/home" className='bottom-ai'
         onClick={(e) => e.stopPropagation()}
       >
         Back to Vedas

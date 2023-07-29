@@ -105,3 +105,17 @@ justify-content: center;
 align-items: center; /* Center the items horizontally */
 padding-bottom: 20px; /* Add some padding at the bottom to separate from the viewport edge */
 }
+
+
+@media (min-width: 768px) {
+  .loginPage{
+    max-width: 400px;
+   
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body height to the viewport height to center the content */
+  }
+}

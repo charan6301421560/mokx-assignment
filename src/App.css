@@ -196,11 +196,9 @@ color: #FBBC04;
 }
 
 @media (min-width: 768px) {
-  .header{
-    text-align: center;
-  }
-  .header h1{
-    text-align: center;
+  #App{
+    max-width: 400px;
+   
   }
 }
 

@@ -6,6 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   background-color: #f0f0f0;
+  
 }
 
 .arya-image {
@@ -25,4 +26,18 @@
   text-align: center;
   margin-top: 10px;
   max-width: 500px;
+}
+
+
+@media (min-width: 768px) {
+  .signupPage{
+    max-width: 400px;
+   
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body height to the viewport height to center the content */
+  }
 }
