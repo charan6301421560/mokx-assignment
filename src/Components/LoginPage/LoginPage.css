@@ -1,14 +1,15 @@
 .loginPage {
-    color: #69235B;
-    padding: 20px;
-    height: 100vh;
-    width: 100vw;
+  color: #69235B;
+  padding: 20px;
+  height: 100vh;
+  
+  
 }
 .login-head{
-  text-align: center;
+text-align: center;
 }
 .login-head p{
-  font-family: Inter;
+font-family: Inter;
 font-size: 14px;
 font-weight: 300;
 line-height: 20px;
@@ -17,71 +18,62 @@ text-align: center;
 
 }
 .arrow-link{
-  text-decoration: none;
+text-decoration: none;
 }
 .backArrow {
-  text-align: left;
+text-align: left;
+
 }
 
 .loginImage {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
+max-width: 100%;
+height: auto;
+margin: 20px 0;
 }
 
 .or {
-  font-size: 18px;
-  color: #666;
+font-size: 18px;
+color: #666;
 }
 
 input {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 16px;
+display: block;
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+font-size: 16px;
 }
 
 .loginButton {
-  background: #FFC746;
-  width: 100%;
-  color: #69235B;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-
-
-  
-  /* font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px; */
+background: #FFC746;
+width: 100%;
+color: #69235B;
+font-size: 18px;
+padding: 10px ;
+border: none;
+border-radius: 5px;
 }
+
 .loginButton:disabled{
-  background-color: #FBDC94;
+background-color: #FBDC94;
 }
 .forgotPassword {
-  margin-top: 10px;
-  color: #FFC746;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+margin-top: 10px;
+color: #FFC746;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .f-password{
-  color: #FFC746;
+color: #FFC746;
 }
-  
-  /* Add other CSS styles as needed */
-  
 
-  
+/* Add other CSS styles as needed */
+
+
 .loginPage input[type="email"],
 .loginPage input[type="password"] {
   border: none;
-  
   border-bottom: 1px solid #ccc; /* Add a line-like border for the input fields */
   outline: none;
   background: transparent;
@@ -89,25 +81,26 @@ input {
   margin-bottom: 16px;
   padding: 8px 0;
 }
+  
 
 /* Remove default input field styles */
 .signupPage input[type="email"]::placeholder,
 .signupPage input[type="password"]::placeholder {
-  color: transparent; /* Make the placeholder text transparent */
+color: transparent; /* Make the placeholder text transparent */
 }
 
 .loginPage input[type="email"]::-webkit-input-placeholder,
 .loginPage input[type="password"]::-webkit-input-placeholder {
-  color: transparent; /* Make the placeholder text transparent for Chrome */
+color: transparent; /* Make the placeholder text transparent for Chrome */
 }
 
 .login-bottom {
-  position: absolute;
-  bottom: 0; /* Position the container at the bottom of the loginPage */
-  left: 0; /* Optionally, you can also position it to the left */
-  width: 100%; /* Make sure it spans the whole width of the container */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the items horizontally */
-  padding-bottom: 20px; /* Add some padding at the bottom to separate from the viewport edge */
+position: absolute;
+bottom: 0; 
+width: 94%;/* Make sure it spans the whole width of the container */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; /* Center the items horizontally */
+padding-bottom: 20px; /* Add some padding at the bottom to separate from the viewport edge */
 }
