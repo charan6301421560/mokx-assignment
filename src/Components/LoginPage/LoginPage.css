@@ -2,7 +2,9 @@
   color: #69235B;
   padding: 20px;
   height: 100vh;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
 }
 .login-head{
@@ -95,9 +97,8 @@ color: transparent; /* Make the placeholder text transparent for Chrome */
 }
 
 .login-bottom {
-position: absolute;
-bottom: 0; 
-width: 94%;/* Make sure it spans the whole width of the container */
+
+width: 100%;/* Make sure it spans the whole width of the container */
 display: flex;
 flex-direction: column;
 justify-content: center;

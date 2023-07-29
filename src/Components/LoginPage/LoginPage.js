@@ -35,56 +35,57 @@ function LoginPage() {
 
   return (
     <div className="loginPage">
-      <div className="backArrow">
-        <Link to="/Home" className="arrow-link">
-          ←
-        </Link>
-      </div>
-      <div className="login-head">
-        <h2>Login to Mokx</h2>
-        <p>
-          Welcome back! Sign in using your social account or email to continue
-          with us.
-        </p>
-        <img
-          src="https://i.ibb.co/GxjXXP4/Social-media-uihut.png"
-          alt="Social-media-uihut"
-          border="0"
-        />
-      </div>
-      <div class="line-or-container">
-        <div class="line"></div>
-        <span class="or">OR</span>
-        <div class="line"></div>
-      </div>
-      <label htmlFor="email">Your Email</label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Your Email"
-        value={email}
-        onChange={handleEmailChange}
-      />
-
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        placeholder="Password"
-        value={password}
-        onChange={handlePasswordChange}
-      />
-      {loginError && <p className="error-message">{loginError}</p>}
-
-      <div className="login-bottom">
-        <button className="loginButton" disabled={isLoginDisabled} onClick={handleLogin}>
-          Login in
-        </button>
-        <div className="forgotPassword">
-          <Link to="/home" className="arrow-link f-password">
-            Forgot Password?
+      <div className='login-page-ui'>
+        <div className="backArrow">
+          <Link to="/Home" className="arrow-link">
+            ←
           </Link>
         </div>
+        <div className="login-head">
+          <h2>Login to Mokx</h2>
+          <p>
+            Welcome back! Sign in using your social account or email to continue
+            with us.
+          </p>
+          <img
+            src="https://i.ibb.co/GxjXXP4/Social-media-uihut.png"
+            alt="Social-media-uihut"
+            border="0"
+          />
+        </div>
+        <div class="line-or-container">
+          <div class="line"></div>
+          <span class="or">OR</span>
+          <div class="line"></div>
+        </div>
+        <label htmlFor="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
+        {loginError && <p className="error-message">{loginError}</p>}
+      </div>
+      <div className="login-bottom">
+          <button className="loginButton" disabled={isLoginDisabled} onClick={handleLogin}>
+            Login in
+          </button>
+          <div className="forgotPassword">
+            <Link to="/home" className="arrow-link f-password">
+              Forgot Password?
+            </Link>
+          </div>
       </div>
     </div>
   );
