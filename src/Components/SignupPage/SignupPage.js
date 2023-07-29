@@ -8,6 +8,7 @@ function SignupPage() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [passwordMatchError, setPasswordMatchError] = useState('');
 
   const history = useNavigate();
 
@@ -33,10 +34,22 @@ function SignupPage() {
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
+    // Check if the password and confirm password match
+    if (confirmPassword !== '' && e.target.value !== confirmPassword) {
+      setPasswordMatchError('Passwords do not match');
+    } else {
+      setPasswordMatchError('');
+    }
   };
 
   const handleConfirmPasswordChange = (e) => {
     setConfirmPassword(e.target.value);
+    // Check if the password and confirm password match
+    if (password !== '' && e.target.value !== password) {
+      setPasswordMatchError('Passwords do not match');
+    } else {
+      setPasswordMatchError('');
+    }
   };
 
   const handleSignup = () => {
@@ -96,10 +109,11 @@ function SignupPage() {
         value={confirmPassword}
         onChange={handleConfirmPasswordChange}
       />
+      {passwordMatchError && <p className="error-message">{passwordMatchError}</p>}
 
       <button
         className="signupButton"
-        disabled={isSignupDisabled}
+        disabled={isSignupDisabled || passwordMatchError !== ''}
         onClick={handleSignup}
       >
         Create an account
