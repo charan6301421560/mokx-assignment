@@ -1,0 +1,105 @@
+.signupPage {
+  background-color:#ffffff;
+  padding: 20px;
+  color: #69235B;
+    
+}
+.head-signup{
+  text-align: center;
+}
+.head-signup h2{
+  color:#69235B;
+  
+}
+.arrow-link{
+  text-decoration: none;
+}
+
+.backArrow {
+  text-align: left;
+  
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.signupButton {
+  background-color: #007BFF;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* SignupPage.css */
+
+.error-label {
+  color: red;
+}
+
+.error-message{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color:#FF2D1B ;
+}
+  /* Add other CSS styles as needed */
+  /* Add styles for the signupPage container */
+.signupPage {
+  
+  margin: 0 auto;
+}
+
+/* Add styles for the labels */
+.signupPage label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Add styles for the line-like input fields */
+.signupPage input[type="text"],
+.signupPage input[type="email"],
+.signupPage input[type="password"] {
+  border: none;
+  
+  border-bottom: 1px solid #ccc; /* Add a line-like border for the input fields */
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+
+/* Remove default input field styles */
+.signupPage input[type="text"]::placeholder,
+.signupPage input[type="email"]::placeholder,
+.signupPage input[type="password"]::placeholder {
+  color: transparent; /* Make the placeholder text transparent */
+}
+
+.signupPage input[type="text"]::-webkit-input-placeholder,
+.signupPage input[type="email"]::-webkit-input-placeholder,
+.signupPage input[type="password"]::-webkit-input-placeholder {
+  color: transparent; /* Make the placeholder text transparent for Chrome */
+}
+
+/* Style the "Create Account" button */
+.signupPage .signupButton {
+  background-color:#FFC746;
+  background: #FFC746;
+  width: 100%;
+  color: #69235B;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
